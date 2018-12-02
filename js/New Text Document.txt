@@ -1,0 +1,5 @@
+SELECT DATE(sqlitetimestamp), SUM(money_insert) FROM sales_record WHERE DATE(sqlitetimestamp)='2018-02-01' GROUP BY date(sqlitetimestamp)
+
+
+
+SELECT DATE(sqlitetimestamp), SUM(money_insert) FROM sales_record WHERE DATE(sqlitetimestamp) BETWEEN '2018-02-01' AND '2018-07-31' GROUP BY date(sqlitetimestamp) LIMIT 5
